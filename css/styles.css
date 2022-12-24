@@ -9,7 +9,7 @@ html {
 body {
     font-family: sans-serif;
     color: white;
-    background-color: #666;
+    background-color: #a08aca;
     margin: 0 0%;
   }
   h1, h2 {
@@ -25,6 +25,7 @@ body {
     max-height: 100%;
     max-width: 100%;
   }
+  
   .center{
     align-items: center;
   }  
@@ -36,6 +37,12 @@ body {
   }
   .col{
     flex-direction: column;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .space-evenly{
+    justify-content: space-evenly;
   }
   .sticky{
     position: fixed;
@@ -471,20 +478,63 @@ body {
 
   #fourth-panel{
     padding-top: 3vh;
-    height:60vh;
+    height:75vh;
   }
   form{
-    width: 100%;     
-    max-width: 50vw;   
-    margin: 5ch auto;
+    width: 100%;      
+    margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: space-evenly;
+  }
+  #sm-col{
+    align-items: flex-start;
+    width: 100%;
+  }
+  h2.contact-me{
+  }
+  .contact-text{
+    position: relative;
+    top: -5.5vw;
+  }
+  .contact-text p{
+    font-weight: 500;
+    margin-top: 2ch;
   }
   .form-control{
     display: flex;
     width:100%;
     justify-content: space-between;
   }
+  .form-container{
+    width: 100%;
+    color: black;
+    padding-top: 10vw;
+  }
+  .form-item{
+    margin: 0;
+    margin-right: 6vw;
+  }
+  .submit-btn{
+    padding: .75ch;
+    background-color: rgb(65, 65, 255);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: .75ch;
+    width: 12vh;
+    margin-left: 35%;
+  }
+  .submit-btn:hover{
+    cursor:pointer;    
+    background-color: rgb(243, 208, 52);
+    color: black;
+  }
+
+  .submit-btn:active, .contact-link:active{
+    transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+  }
+
   @media (max-width: 0px){
     .subject-grid{
       display:grid;
@@ -496,6 +546,10 @@ body {
   }
 
   @media (max-width: 989px){
+    #sm-col{
+      flex-direction: column;
+      align-items: center;
+    }
     .intro{
       position: inherit;
       justify-content: flex-end;

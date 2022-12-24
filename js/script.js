@@ -28,3 +28,21 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+$("button.submit-btn").mousedown(function(){
+  $(this).addClass("pressed");
+});
+
+$("button.submit-btn").mouseup(function(){
+  $(this).removeClass("pressed");
+});
+
+
+
+$("button.submit-btn").on("tap",function(){
+  $(this).removeClass("pressed");
+});
+
+$("button.submit-btn").mouseout(function(){
+  $(this).removeClass("pressed");
+});

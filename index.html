@@ -169,17 +169,70 @@
       <p class="review-link"><a class="review-link" href="https://forms.gle/fqe5mMTwNaYCGGmx7" target="_blank">Leave a Review</a></p>
     </section>
     <section class="contact-me" id="fourth-panel" name="anchor-contact">
-        <h2>Contact Me</h2>
-        <form target="_blank" action="https://formsubmit.co/741c0fa84f5ae40415ad3910ee2480ae" method="POST">
-          <div class="flex">
-              <input type="text" name="name" class="form-control" placeholder="Full Name" required>     
-              <input type="email" name="email" class="form-control" placeholder="Email Address" required></div>
-          <div class="form-group">
-            <input type="text" name="course" class="form-control" placeholder="Course You'd like Tutoring For" required>
-            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        
+        <div class="form-container">
+          <div class="contact-text">
+            <h2 class="contact-me">Contact Me</h2>
+            <p class="text-center">First Session's On Me! <br> Book your Complimentary Session Today</p>
           </div>
-          <button type="submit" class="">Submit Form</button>
-          </form>
+          <form target="_blank" action="https://formsubmit.co/741c0fa84f5ae40415ad3910ee2480ae" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_subject" value="Tutoring Services">
+            <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I aim to reply to all inquiries within 24hrs :)">
+            <input type="hidden" name="_template" value="table">
+            <div class="container flex row" id="sm-col">
+              <div class="flex space-around">
+                <div class="form-item flex-start container">
+                  <h3 class="pref-days">Preferred Day(s)</h3>
+                  <input type="checkbox" id="day mon" name="Monday" value="Preferred">
+                  <label for="Monday">Monday</label><br>
+                  <input type="checkbox" id="day tue" name="Tuesday" value="Preferred">
+                  <label for="Tuesday">Tuesday</label><br>
+                  <input type="checkbox" id="day wed" name="Wednesday" value="Preferred">
+                  <label for="Wednesday">Wednesday</label><br>
+                  <input type="checkbox" id="day thu" name="Thursday" value="Preferred">
+                  <label for="Thursday">Thursday</label><br>
+                  <input type="checkbox" id="day fri" name="Friday" value="Preferred">
+                  <label for="Friday">Friday</label><br>
+                  <input type="checkbox" id="day sat" name="Saturday" value="Preferred">
+                  <label for="Saturday">Saturday</label><br>
+                  <input type="checkbox" id="day sun" name="Sunday" value="Preferred">
+                  <label for="Sunday">Sunday</label><br>
+                  <input type="checkbox" id="day flex" name="flex-day" value="Flexible">
+                  <label for="flex-day">I'm Flexible</label><br>
+              </div>
+              <div class="container flex-start form-item">
+                <h3 class="pref-days">Preferred Time(s)</h3>
+                <input type="checkbox" id="day mon" name="12:00pm" value="12:00pm">
+                  <label for="12:00pm">12:00pm</label><br>
+                  <input type="checkbox" id="day tue" name="12:30pm" value="12:30pm">
+                  <label for="12:30pm">12:30pm</label><br>
+                  <input type="checkbox" id="day wed" name="1:00pm" value="1:00pm">
+                  <label for="1:00pm">1:00pm</label><br>
+                  <input type="checkbox" id="day thu" name="1:30pm" value="1:30pm">
+                  <label for="1:30pm">1:30pm</label><br>
+                  <input type="checkbox" id="day fri" name="3:30pm" value="3:30pm">
+                  <label for="3:30pm">3:30pm</label><br>
+                  <input type="checkbox" id="day sat" name="5:00pm" value="5:00pm">
+                  <label for="5:00pm">5:00pm</label><br>
+                  <input type="checkbox" id="day sun" name="5:30pm" value="5:30pm">
+                  <label for="5:30pm">5:30pm</label><br>
+                  <input type="checkbox" id="time flex radio" name="flex-time" value="yes">
+                  <label for="flex-time">I'm Flexible</label><br>
+              </div>
+          </div>
+              <div class="container form-item">
+                <div class="flex">
+                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required></div>
+                  <div class="form-group">
+                  <input type="text" name="course" class="form-control" placeholder="Course You'd Like Tutoring For" required>
+                  <textarea style="resize: none;" placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+              </div>
+            </div>
+            </form>
+        </div>
       </div>
     </section>    
   </body>
